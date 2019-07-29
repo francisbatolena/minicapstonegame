@@ -1,0 +1,186 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;
+	font-family: 'Gochi Hand', cursive;
+	background-color: #FFFAF0;
+}
+
+h1 {
+	font-size: 35px;
+}
+h2{
+	font-size: 25px;
+}
+h3{
+	font-size: 25px;
+}
+
+#container {
+	text-align: center;
+	position: relative;
+	height: 100vh;
+	margin: auto;
+}
+
+#status {
+	border: 5px solid black;
+	line-height: 10px;
+	height: 50px;
+	width: 125px;
+	margin: auto;
+	border-radius: 10px;
+	line-height: 50px;
+
+}
+
+#myScoreBoard {
+	position: relative;
+	display: inline-block;
+	
+	text-align: left;
+	left: -150px;
+}
+
+#comScoreBoard {
+	position: relative;
+	display: inline-block;
+	
+	text-align: right;
+	right: -150px
+}
+
+#opponent {
+	position: relative;
+	width: 250px;
+	margin: auto;
+
+}
+
+#face {
+	height: 150px;
+	width: 150px;
+	background-image: url("../images/face.png");
+	background-size: cover;
+	text-align: center;
+	line-height: 150px;
+	margin: auto;
+}
+
+.hand {
+	height: 80px;
+	width:	80px;	
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	top: 50px;
+	
+}
+
+#hand0 {
+	background-image: url("../images/zero.png");
+	visibility: hidden;
+}
+
+#hand1 {
+	background-image: url("../images/one.png");
+	visibility: hidden;
+}
+
+#hand2 {
+	background-image: url("../images/two.png");
+	visibility: hidden;
+}
+
+#hand3 {
+	background-image: url("../images/three.png");
+	visibility: hidden;
+}
+
+#hand4 {
+	background-image: url("../images/four.png");
+	visibility: hidden;
+}
+
+#hand5 {
+	background-image: url("../images/five.png");
+	visibility: hidden;
+}
+
+#handCover {
+	background-image: url("../images/cover.png");
+	left: 80px;
+}
+
+#handCover:hover {
+	cursor: url(../images/cursor.png), auto;
+	height: 85px;
+	width:	85px;	
+
+}
+
+#labelForChoose {
+	font-size: 20px;
+}
+
+.choose {
+	height: 35px;
+	width:	35px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: inline-block;
+}
+
+.choose:hover {
+	cursor: pointer;
+	height: 40px;
+	width:	40px;
+}
+
+#chooseBtns {
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+#choose0 {
+	background-image: url("../images/zero.png");
+}
+#choose1 {
+	background-image: url("../images/one.png");
+}
+#choose2 {
+	background-image: url("../images/two.png");
+}
+#choose3 {
+	background-image: url("../images/three.png");
+}
+#choose4 {
+	background-image: url("../images/four.png");
+}
+#choose5 {
+	background-image: url("../images/five.png");
+}
+
+#playAgainLabel {
+	font-size: 20px;
+}
+
+#playAgain {
+	
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: inline-block;
+	width: 75px;
+	height: 75px;
+	background-image: url("../images/flick.png");
+}
+
+#playAgain:hover {
+	cursor: pointer;
+	width: 85px;
+	height: 85px;
+}
