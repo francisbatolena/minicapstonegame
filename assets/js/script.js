@@ -41,8 +41,8 @@ choose5.addEventListener("click", function(){
 	return displayChoice(5);
 });
 
-let random=Math.random()*5;
-let randomNumber=Math.round(random);
+let random;
+let randomNumber;
 
 let mytotalScore = 0;
 function addScore(myScore) {
@@ -57,6 +57,8 @@ function addComScore(comScore) {
 }
 
 function checkWinner() {
+	random=Math.random()*5;
+	randomNumber=Math.round(random);
 	
 	for(i=0; i<hands.length; i++) {
 		if(randomNumber == i) {
