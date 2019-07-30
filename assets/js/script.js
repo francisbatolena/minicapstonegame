@@ -41,8 +41,8 @@ choose5.addEventListener("click", function(){
 	return displayChoice(5);
 });
 
-let random;
-let randomNumber;
+let random=Math.random()*5;
+let randomNumber=Math.round(random);
 
 let mytotalScore = 0;
 function addScore(myScore) {
@@ -57,8 +57,8 @@ function addComScore(comScore) {
 }
 
 function checkWinner() {
-	random=Math.random()*5;
-	randomNumber=Math.round(random);
+	
+	
 	
 	for(i=0; i<hands.length; i++) {
 		if(randomNumber == i) {
@@ -78,7 +78,7 @@ handCover.addEventListener("click", function(){
 		document.getElementById("status").innerHTML = "You Lose";
 		return addComScore(1);
 
-	} else {
+	} else if(randomNumber != chosenNumber){
 		checkWinner();
 		document.getElementById("handCover").style.visibility = "hidden";	
 		document.getElementById("status").style.color ="blue";
@@ -95,6 +95,8 @@ playAgain.addEventListener("click", function(){
 	document.querySelector("#opponentsChoice").innerHTML = "";
 	document.getElementById("status").innerHTML = "";
 	handCover.style.visibility = "visible";
+	random=Math.random()*5;
+	randomNumber=Math.round(random);
 });
 
 
